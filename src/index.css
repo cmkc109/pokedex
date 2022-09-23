@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo&family=Montserrat&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url('./assets/pokemon-bkg.jpg');
+  background-size: cover;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+
+.text-center {
+  text-align: center;
+}
+
+.red-bold {
+  font-weight: bold;
+  color: red;
+}

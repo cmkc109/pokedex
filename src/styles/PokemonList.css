@@ -1,0 +1,130 @@
+button {
+    padding: 0.5rem 2rem;
+    background: black;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: grey;
+}
+
+.container {
+   display: flex;
+   width: 90%;
+   justify-content: center;
+   margin: 0 auto;
+}
+
+
+.pokemon-list {
+    width: 40%;
+    display: grid;
+    grid: repeat(5, 1fr) /repeat(2,1fr);
+    grid-gap: 10px;
+    margin-top: 2rem;
+}
+
+
+.pokemon-card {
+    border: 2px solid grey;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    background-color: rgb(247, 243, 243);
+    font-size: 1.3rem;
+}
+
+.pokemon-card:hover,
+.pokemon-card:focus {
+    background-color: rgb(237, 250, 229);
+}
+
+.number {
+   color: rgb(139, 126, 126);
+   background: white;
+   border-radius: 50%;
+   width: 50px;
+   height: 50px;
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.pokemon-details {
+    border: 4px solid black;
+    width: 20%;
+    border-radius: 10px;
+    margin: 5rem;
+    font-size: 1.3rem;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+    min-width: 350px;
+    background: rgba(248, 248, 248, 0.8);
+   
+}
+
+.stat-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.2rem 1rem;
+    margin: 0.3rem 3rem;
+    text-transform: capitalize;
+  }
+  
+
+.pokemon-header {
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    font-weight: 900;
+    background-color: rgb(97, 101, 223);
+    margin-bottom: 1.5rem;
+    font-family: 'Archivo', sans-serif;
+    color: rgb(235, 236, 247);
+    font-size: 2rem;
+}
+
+.pokemon-header img {
+    margin-right: 2.2rem;
+}
+ 
+
+.pokemon-type {
+    padding: 0.2rem 0.3rem;
+    border-radius: 10px;
+    margin-left: 1rem;
+    font-size: 1rem;
+  }
+
+@media (max-width: 769px) {
+    .container {
+        flex-direction: column;
+        align-items: center;  
+    }
+    .pokemon-list {
+        width: 100%
+    }
+    .pokemon-card {
+        padding: 0.2rem 0.5rem;
+    }
+ 
+}
+
+@media (max-width: 1200px) {
+    .container {
+        justify-content: space-between;
+    }
+    .pokemon-card {
+        padding: 0.2rem 0.5rem;
+    }
+  
+}
