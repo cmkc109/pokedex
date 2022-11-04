@@ -12,12 +12,24 @@
   padding-bottom: 2rem;
 }
 
+
 .search-form {
     font-size: 1.1rem;
     padding: 1rem;
     display:flex;
     justify-content: center;
+    text-align: center;
   }
+
+  @media (max-width: 844px) {
+    .pokemon-detail {
+      width: 80%;
+    }
+    .search-form input {
+      margin-bottom: 0.6rem;
+    }
+  }
+  
 
 h3 {
     font-family: 'Montserrat', sans-serif;
@@ -44,7 +56,7 @@ h3 {
   
  .pokemon-stat {
   display: flex;
-  width: 400px;
+  width: 85%;
   justify-content: space-between;
   margin: 0 auto 0.2rem;
   

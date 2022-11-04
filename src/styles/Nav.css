@@ -2,18 +2,20 @@ header {
     background: black;
     color: white;
     text-align: center;
-    padding: 1rem;
+    padding: 0.2rem;
+    height: 18vh;
+    width: 100%;
 }
 
 header h1 {
-    font-size: 3rem;
+    font-size: 2.7rem;
 }
 
 header ul {
     display: flex;
     list-style: none;
     justify-content: center;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin: 1rem 0 1rem 0;
     
 }
@@ -24,8 +26,11 @@ header li:hover {
    cursor: pointer;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 844px) {
   header ul {
     flex-direction: column;
+    font-size: 0.8rem;
   }
+   
+   
 }

@@ -12,7 +12,7 @@ const PokemonList = () => {
     //fetch batch of 20s
     useEffect( () => {
         const fetchData = async () => {
-            const res = await fetch(`https://pokeapi.co/api/v2/pokemon/?limit=10&offset=${offset}`);
+            const res = await fetch(`https://pokeapi.co/api/v2/pokemon/?limit=8&offset=${offset}`);
             const data = await res.json();
             setCurrent(data.results);
   

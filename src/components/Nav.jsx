@@ -4,13 +4,13 @@ import {Link} from 'react-router-dom'
 
 const Nav = () => {
   const headerStyle = {
-    height: "15vh",
+    height: "11vh",
     background: "black",
     color: "white",
     textAlign: "center",
     padding: "1rem",
     textDecoration: "none",
-    fontSize: "3rem"
+    fontSize: "2rem"
   }
 
   let listStyle = {
@@ -19,6 +19,7 @@ const Nav = () => {
     border: "1px solid white",
     padding: "0.2rem 1rem",
     marginRight: "2rem",
+    width: "100%"
   }
   
   const [hover, setHover] = useState(false)
